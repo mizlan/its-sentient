@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# change sentient.html in-place
+perl -i'' ".git/hooks/commit_updater.pl" "sentient.html"
+
+# add these changes so they get into the current commit
+git add "sentient.html"
